@@ -1,12 +1,96 @@
-<!DOCTYPE html>
+!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
-</html>
+   <head>
+
+	  <title>Recollection </title>
+	  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+      <link href="assets/css/styles.css" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Coda+Caption:800&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+   </head>
+   <body>
+
+      <div class="fullscreen">
+         <div class="jumbotron header">
+            <h1>Recollection</h1>
+		 </div>
+          <h1>Recollection</h1>
+		 </div>
+		 
+         <div class="container pb-5">
+            <div class="row">
+               <div class="col-sm-8 offset-sm-2 col-md-6 offset-md-3 col-lg-4 offset-lg-4">
+                  <div id="game-menu" class="animation bounceDown text-center">
+                     <button id="start-game-button" class="btn btn-lg btn-outline-light btn-block"
+                        onclick="startGame()">
+                     Start Game
+                     </button>
+                     <div class="form-check mt-2 mb-3 text-white">
+                        <input class="form-check-input" type="checkbox" id="gamemode-checkbox">
+                        <label class="form-check-label" for="gamemode-checkbox">
+                        Strict Gamemode
+                        </label>
+                     </div>
+                     <button id="how-to-play-button" class="btn btn-lg btn-outline-light btn-block" data-toggle="modal" data-target="#tutorial" onclick="">
+                     <i class="fa fa-question-circle" aria-hidden="true"></i>
+                     Tutorial
+                     </button>
+				  </div>
+				  <!--Game Container-->
+                  <div id="game-container" class="animation container bounceDown hidden">
+                     <div class="row d-flex justify-content-between">
+                        <button class="btn btn-lg btn-outline-light btn-block" onclick="exitGame()">
+                        <span>
+                        Exit
+                        <i class="fa fa-sign-out" aria-hidden="true"></i>
+                        </span>
+                        </button>
+                     </div>
+                     <!---->
+                     <div class="row mt-3 d-flex justify-content-between">
+                        <h4 class="text-white">
+                           <span class="stage-number"></span>/<span class="max-stage-number"></span>
+                        </h4>
+                        <h4 id="go-text" class="text-success">
+                           GO
+                        </h4>
+                        <h4 id="wait-text" class="text-warning">
+                           WAIT
+                        </h4>
+					 </div>
+					 <!--Flip Tiles--->
+                     <div class="row mt-2 d-flex justify-content-between">
+                        <div id="0" class="tile flip-card" >
+                           <div class="flip-card-inner">
+                              <div class="flip-card-front">
+                              </div>
+                              <div class="flip-card-back card-1">
+                              </div>
+                           </div>
+                        </div>
+                        <div id="1" class="tile flip-card" >
+                           <div class="flip-card-inner">
+                              <div class="flip-card-front">
+                              </div>
+                              <div class="flip-card-back card-2">
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="row mt-4 d-flex justify-content-between">
+                        <div id="2" class="tile flip-card" >
+                           <div class="flip-card-inner">
+                              <div class="flip-card-front">
+                              </div>
+                              <div class="flip-card-back card-3">
+                              </div>
+                           </div>
+                        </div>
+                        <div id="3" class="tile flip-card" >
+                           <div class="flip-card-inner">
+                              <div class="flip-card-front">
+                              </div>
+                              <div class="flip-card-back card-4">
+                              </div>
+                       
